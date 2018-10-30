@@ -19,9 +19,9 @@ This is a simple website I'm building with **[`Belu`](https://github.com/Belgebe
 
 3. `npm run dependencies`
 
-3. Now you should create a new file called **keys_dev.js** inside the folder **./config** 
+4. Now you should create a new file called **keys_dev.js** inside the folder **./config** 
 
-4. Inside this file paste this code:
+5. Inside this file paste this code:
 ```
 module.exports = {
   mongoURI: 'mongodb://localhost:27017/menu-website',
@@ -29,4 +29,4 @@ module.exports = {
 ```
 You can replace the mongoURI with your own mongodb uri.
 
-5. After that you should run `npm run dev` and it will run the react app in *localhost:3000* and the api in *localhost:5000*
+6. After that you should run `npm run dev` and it will run the react app in *localhost:3000* and the api in *localhost:5000*
