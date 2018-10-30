@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import styled from 'styled-components'
 import axios from 'axios'
 
 export default function Landing() {
@@ -7,13 +8,13 @@ export default function Landing() {
   setMenuState('/api/menu', setMenu)
 
   return (
-    <>
+    <Wrapper>
       <ul>
         {menu.map(item => (
           <li key={item.name}>{item.name}</li>
         ))}
       </ul>
-    </>
+    </Wrapper>
   )
 }
 
@@ -27,3 +28,10 @@ function setMenuState(url, setState) {
     [url]
   )
 }
+
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+`
